@@ -38,7 +38,7 @@ public class Pessoa {
         this.salario = valor;
         System.out.println("o novo salario de" + this.nome + " é " + this.salario);
     }
-    public void atribuirSalario(double valor, double bonus) {
+    public void atribuirsalario(double valor, double bonus) {
     this.salario = valor + bonus;
     System.out.println("O novo salario de " + this.nome + " e: " + this.salario + " mais um bonus de " + bonus);
 
