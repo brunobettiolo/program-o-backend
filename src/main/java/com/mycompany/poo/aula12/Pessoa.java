@@ -19,8 +19,9 @@ public class Pessoa {
     private int idade;
     private double altura;
     private double peso;
-    //Conatrutor padrão
-    //Todo método construtor possui o mesmo nome da classe
+
+    // Conatrutor padrão
+    // Todo método construtor possui o mesmo nome da classe
     public Pessoa() {
         System.out.println("Chamada o construtor padrão");
     }
@@ -30,13 +31,28 @@ public class Pessoa {
         System.out.println("Chamada construtor 2");
     }
 
+    public Pessoa(int idade) {
+        this.idade = idade;
+        System.out.println("Chamando construtor 3");
+    }
+
+    public Pessoa(double altura) {
+        this.altura = altura;
+        System.out.println("Chamando construtor 4");
+    }
+
+    // Não pode ter a mesma quantidade de parâmetros e tipos
+    // public Pessoa(double peso) {
+    // this.peso = peso;
+    // }
+
     public String getNome() {
         return nome;
     }
 
     public void setNome(String nome) {
         this.nome = nome;
-        
+
     }
 
     public int getIdade() {
